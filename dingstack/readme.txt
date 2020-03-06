@@ -42,12 +42,18 @@ Możliwe jest również przechowanie danych <4-bajtowych poprzez rzutowanie ich 
 
 3.Usuwanie ze stosu
 a)Przekazanie adresu struktury struct stack_head w funkcji stack_pop(struct stack_head * stack_head)
+przykład:
+stack_pop(&stack_head);
 
 4.Pobieranie przechowywanej danej ze stosu
 Stos zwraca adres zmiennej gdzie jest dana, należy go rzutować na wskaźnik 4-bajtowy i wyłuskać.
 a)Przekazanie struktury struct stack_head w funkcji stack_top(struct stack_head stack_head)
 b)Rzutowanie na 4-bajtowy wskaźnik
 c)Wyłuskanie
+przykład:
+*(float*)stack_top(stack_head);
 
 5.Sprawdzanie czy stos zawiera jakieś dane
 a)Przekazanie struktury struct stack_head w funkcji stack_empty(struct stack_head stack_head)
+przykład:
+stack_empty(stack_head);
