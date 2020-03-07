@@ -30,7 +30,7 @@ unsigned char stack_push(struct stack_head * stack_head, void * value)
             return 1;
 
         (*new_stack).next = (*stack_head).current;
-        (*new_stack).value = *((int*)value);
+        (*new_stack).value = *((unsigned int*)value);
         (*stack_head).current = new_stack;
         (*stack_head).counter++;
 
